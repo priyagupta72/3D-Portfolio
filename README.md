@@ -8,7 +8,7 @@
 
 **A fully 3D, WebGL-powered developer portfolio built with React and Three.js**
 
-[Live Demo]([#](https://priya3-d-portfolio.vercel.app/)) · [Report Bug](https://github.com/priyagupta72/3D-Portfolio/issues) · [Connect on LinkedIn](https://www.linkedin.com/in/priya-gupta-6a68b1257/)
+[Live Demo](https://priya3-d-portfolio.vercel.app/) · [Report Bug](https://github.com/priyagupta72/3D-Portfolio/issues) · [Connect on LinkedIn](https://www.linkedin.com/in/priya-gupta-6a68b1257/)
 
 </div>
 
