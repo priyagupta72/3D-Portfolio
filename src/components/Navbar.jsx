@@ -173,7 +173,7 @@ export default function Navbar() {
             onMouseLeave={() => setCtaHover(false)}
             onClick={() => scrollTo("contact")}
           >
-            HIRE ME
+            CONTACT ME
           </button>
 
           {/* Hamburger — mobile only */}

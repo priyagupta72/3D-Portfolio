@@ -173,20 +173,10 @@ export default function App() {
             fontSize: "0.6rem",
             fontWeight: 700,
             letterSpacing: "0.2em",
-            color: "rgba(255,255,255,0.3)",
+            color: "rgba(255,255,255,0.55)",
           }}
         >
           PRIYA GUPTA · PORTFOLIO 2026
-        </span>
-        <span
-          style={{
-            fontFamily: "'Space Mono',monospace",
-            fontSize: "0.5rem",
-            letterSpacing: "0.1em",
-            color: "rgba(255,255,255,0.2)",
-          }}
-        >
-          POWERED BY THREE.JS WebGL · FULLY 3D
         </span>
       </footer>
     </>

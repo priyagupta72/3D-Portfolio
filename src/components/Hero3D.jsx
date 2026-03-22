@@ -693,15 +693,15 @@ export default function Hero3D() {
     >
       <style>{`
         @keyframes pulseDot {
-          0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(0,212,184,0.5);}
-          50%{opacity:0.7;box-shadow:0 0 0 5px rgba(0,212,184,0);}
-        }
-        @keyframes scrollAnim {
-          0%{transform:scaleY(0);transform-origin:top;}
-          50%{transform:scaleY(1);transform-origin:top;}
-          51%{transform-origin:bottom;}
-          100%{transform:scaleY(0);transform-origin:bottom;}
-        }
+  0%,100%{ opacity:1; transform:scale(1); }
+  50%{ opacity:0.6; transform:scale(1.5); }
+}
+@keyframes scrollAnim {
+  0%  { opacity:0;   transform:translateY(-8px); }
+  40% { opacity:1;   transform:translateY(0px);  }
+  80% { opacity:0.6; transform:translateY(8px);  }
+  100%{ opacity:0;   transform:translateY(12px); }
+}
         @keyframes hero-fadein { from{opacity:0;transform:translateY(12px);} to{opacity:1;transform:translateY(0);} }
 
         @media (max-width: 640px) {
@@ -787,7 +787,7 @@ export default function Hero3D() {
           pointerEvents: "none",
         }}
       >
-        <div
+        {/* <div
           style={{
             width: 5,
             height: 5,
@@ -795,7 +795,7 @@ export default function Hero3D() {
             background: "#00D4B8",
             animation: "pulseDot 2s infinite",
           }}
-        />
+        /> */}
         <span
           style={{
             fontFamily: "'Space Mono',monospace",
@@ -1007,14 +1007,12 @@ export default function Hero3D() {
         >
           SCROLL
         </span>
-        <div
-          style={{
-            width: 1,
-            height: 52,
-            background: "linear-gradient(to bottom,#00D4B8,transparent)",
-            animation: "scrollAnim 2s ease-in-out infinite",
-          }}
-        />
+        <div style={{
+  width: 1, height: 52,
+  background: "linear-gradient(to bottom,#00D4B8,transparent)",
+  animation: "scrollAnim 2.2s ease-in-out infinite",
+  willChange: "transform, opacity",   // hint browser to composite this layer
+}} />
       </div>
     </section>
   );
